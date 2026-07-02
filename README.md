@@ -24,23 +24,13 @@ Summary of DeepCLIP and its functionalities:
 DeepCLIP was designed to run on Linux flavoured operating systems and while it may run on Windows or FreeBSD flavours such as OS-X we do not actively support this.
 
 DeepCLIP requires Python 2.7 along with the latest versions of Theano and Lasagne.
-To install requirements for DeepCLIP, please install Theano and then Lasagne, followed by the remaining requirements:
-```shell
-pip install git+git://github.com/Theano/Theano.git
-pip install https://github.com/Lasagne/Lasagne/archive/master.zip
-pip install mkl-service
-pip install scikit-learn
-pip install matplotlib
-pip install biopython
-pip install htseq
-```
-
+To install requirements for DeepCLIP, please install Theano and then Lasagne, followed by the remaining requirements.
 We recommend using conda to install a DeepCLIP specific environment along with DeepCLIP requirements:
 ```shell
 conda create -n deepclip python=2.7 mkl-service numpy scipy scikit-learn biopython htseq matplotlib
 conda activate deepclip
-pip install git+git://github.com/Theano/Theano.git
-pip install https://github.com/Lasagne/Lasagne/archive/master.zip
+pip install Theano
+pip install Lasagne
 ```
 ---
 ## Installation
